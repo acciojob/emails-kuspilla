@@ -47,17 +47,17 @@ public class Email {
                     }
                 }
                 if( upcase  ){
-                    System.out.println("It contains at least one uppercase letter");
+                    System.out.println("The new password is not valid");
                     return ;
                 }
                 else if (lowcase){
-                    System.out.println("It contains at least one lowercase letter");
+                    System.out.println("The new password is not valid");
                 }
                 else if ( digit){
-                    System.out.println("It contains at least one digit");
+                    System.out.println("The new password is not valid");
                 }
                 else if( special_char){
-                    System.out.println( "It contains at least one special character");
+                    System.out.println("The new password is not valid");
                 }
                 else{
                     this.password = newPassword;
@@ -71,7 +71,7 @@ public class Email {
 
 
         } else {
-            System.out.println("Invalid password");
+            System.out.println("The given password doesn't match the current password");
         }
 
     }
